@@ -1,0 +1,23 @@
+# 以太坊网络配置
+eth:
+  infura_api_key: "XE2nmOMCIb6XVkP4Rj7Ar"  # 可通过环境变量SEPOLIA_INFURA_API_KEY设置
+  chain_id: 11155111  # Sepolia测试网链ID
+# 日志配置
+log:
+  env: "development"  # 环境: development/production
+  level: "info"       # 日志级别: debug/info/warn/error
+  file_path: "./logs/sepolia-ops.log"  # 日志文件路径
+  max_size: 10        # 单个文件最大尺寸(MB)
+  max_backups: 30     # 最大备份文件数
+  max_age: 7          # 最大保留天数
+  compress: true      # 是否压缩备份文件
+
+  # 区块查询配置
+block:
+  target_number: 5000000  # 要查询的区块号（Sepolia测试网区块）
+
+# 交易配置
+transaction:
+  private_key: "c562e6bb296a76c42bcc591cf9f3adee352dda4f8966833f0085210af027997b"               # 请替换为你的实际私钥（不含0x前缀）
+  recipient_addr: "0x1234567890abcdef1234567890abcdef12345678"  # 接收方地址
+  amount_wei: 100000000000000  # 转账金额（0.1 ETH = 1e17 Wei）

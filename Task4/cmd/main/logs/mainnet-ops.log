@@ -1,0 +1,9 @@
+2025-07-31T21:24:31.707+0800	[34mINFO[0m	main/main.go:33	日志系统初始化完成	{"env": "development", "level": "info"}
+2025-07-31T21:24:31.708+0800	[34mINFO[0m	main/main.go:46	成功连接到以太坊主网
+2025-07-31T21:24:31.708+0800	[34mINFO[0m	main/main.go:52	开始查询区块信息	{"target_block": 19000000}
+2025-07-31T21:24:35.665+0800	[34mINFO[0m	main/main.go:70	开始发送转账交易	{"recipient": "0x1234567890AbcdEF1234567890aBcdef12345678", "amount_wei": "100000000000000"}
+2025-07-31T21:24:37.715+0800	[31mFATAL[0m	main/main.go:80	发送交易失败	{"error": "发送交易失败: insufficient funds for gas * price + value: have 0 want 91224777420000", "errorVerbose": "insufficient funds for gas * price + value: have 0 want 91224777420000\n发送交易失败\ngithub.com/CTO-xk/init_project/Task4/pkg/transaction.(*Service).SendTransfer\n\t/Users/luna_xk/go/goStudyProject/init_project/Task4/pkg/transaction/service.go:83\nmain.main\n\t/Users/luna_xk/go/goStudyProject/init_project/Task4/cmd/main/main.go:74\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:283\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1223\nmain.main\n\t/Users/luna_xk/go/goStudyProject/init_project/Task4/cmd/main/main.go:80\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:283\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1223"}
+main.main
+	/Users/luna_xk/go/goStudyProject/init_project/Task4/cmd/main/main.go:80
+runtime.main
+	/usr/local/go/src/runtime/proc.go:283
