@@ -1,0 +1,12 @@
+**.DS_Store
+.DS_Store
+node_modules
+cache
+typechain-types
+artifacts
+.idea
+.history
+**node_modules**
+**cache**
+**artifacts**
+**readme_mirror.md**
