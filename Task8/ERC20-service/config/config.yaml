@@ -1,0 +1,29 @@
+# 数据库配置
+database:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "root"
+  dbname: "erc20_tracker"
+  sslmode: "disable"
+
+# RabbitMQ配置
+rabbitmq:
+  url: "amqp://guest:guest@localhost:5672/"
+  exchange: "points_exchange"
+  queue: "points_calculation_queue"
+  routing_key: "points.calculate"
+
+# 多链配置
+chains:
+  - name: "sepolia"
+    rpc_url: "https://sepolia.infura.io/v3/535ce083771a4e1e84f7a70365ff41be"
+    chain_id: 11155111
+    contract_address: "0xe6bf0A4F7C872aE7C1D04C424d557B1D39695791"
+    start_block: 9222461  # 从最新部署区块开始
+    block_delay: 6
+
+# 积分计算配置
+points:
+  rate: 0.05
+  interval: 5  # 每5分钟计算一次

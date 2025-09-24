@@ -1,0 +1,13 @@
+{
+  "network": "sepolia",
+  "contractName": "EnterpriseToken",
+  "address": "0xdc26F4e09134ad2A716d8a6669375bDA50965eF1",
+  "deployer": "0xfc8F8dDFAF37C5884f2618606c55a878a6cD28a5",
+  "owner": "0xfc8F8dDFAF37C5884f2618606c55a878a6cD28a5",
+  "name": "Enterprise Token",
+  "symbol": "ENT",
+  "deploymentTime": "2025-09-17T13:58:04.298Z",
+  "transactionHash": "0xcc0205368c5ae478add6ea9ac81e60db70494fcdaa35d6da9c20cda3a861c761",
+  "blockNumber": 9222337,
+  "confirmations": 6
+}
